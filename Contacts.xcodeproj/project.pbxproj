@@ -14,6 +14,8 @@
 		CF8FD8BA1E6B27750000A77A /* Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF8FD8B81E6B27750000A77A /* Contacts.xcdatamodeld */; };
 		CF8FD8BC1E6B27750000A77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF8FD8BB1E6B27750000A77A /* Assets.xcassets */; };
 		CF8FD8BF1E6B27750000A77A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8FD8BD1E6B27750000A77A /* LaunchScreen.storyboard */; };
+		CF8FD8C81E6B28500000A77A /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8FD8C71E6B28500000A77A /* ContactDetailsViewController.m */; };
+		CF9AABAB1E6B9DC900E328AC /* ContactClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9AABAA1E6B9DC900E328AC /* ContactClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		CF8FD8BB1E6B27750000A77A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF8FD8BE1E6B27750000A77A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF8FD8C01E6B27750000A77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF8FD8C61E6B28500000A77A /* ContactDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailsViewController.h; sourceTree = "<group>"; };
+		CF8FD8C71E6B28500000A77A /* ContactDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
+		CF9AABA91E6B9DC900E328AC /* ContactClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactClass.h; sourceTree = "<group>"; };
+		CF9AABAA1E6B9DC900E328AC /* ContactClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF55FC311E6B998300E75B5B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FD8B51E6B27750000A77A /* Main.storyboard */,
+				CF8FD8BD1E6B27750000A77A /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		CF8FD8A01E6B27740000A77A = {
 			isa = PBXGroup;
 			children = (
@@ -60,13 +75,11 @@
 		CF8FD8AB1E6B27750000A77A /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				CF8FD8AF1E6B27750000A77A /* AppDelegate.h */,
-				CF8FD8B01E6B27750000A77A /* AppDelegate.m */,
-				CF8FD8B21E6B27750000A77A /* ViewController.h */,
-				CF8FD8B31E6B27750000A77A /* ViewController.m */,
-				CF8FD8B51E6B27750000A77A /* Main.storyboard */,
+				CF55FC311E6B998300E75B5B /* Storyboards */,
+				CFD3A1261E6B3B58000A9BFA /* Head Classes */,
+				CFD3A1251E6B3B29000A9BFA /* View */,
+				CFD3A1241E6B3B0E000A9BFA /* Model */,
 				CF8FD8BB1E6B27750000A77A /* Assets.xcassets */,
-				CF8FD8BD1E6B27750000A77A /* LaunchScreen.storyboard */,
 				CF8FD8C01E6B27750000A77A /* Info.plist */,
 				CF8FD8B81E6B27750000A77A /* Contacts.xcdatamodeld */,
 				CF8FD8AC1E6B27750000A77A /* Supporting Files */,
@@ -80,6 +93,35 @@
 				CF8FD8AD1E6B27750000A77A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFD3A1241E6B3B0E000A9BFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF9AABA91E6B9DC900E328AC /* ContactClass.h */,
+				CF9AABAA1E6B9DC900E328AC /* ContactClass.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CFD3A1251E6B3B29000A9BFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FD8B21E6B27750000A77A /* ViewController.h */,
+				CF8FD8B31E6B27750000A77A /* ViewController.m */,
+				CF8FD8C61E6B28500000A77A /* ContactDetailsViewController.h */,
+				CF8FD8C71E6B28500000A77A /* ContactDetailsViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CFD3A1261E6B3B58000A9BFA /* Head Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FD8AF1E6B27750000A77A /* AppDelegate.h */,
+				CF8FD8B01E6B27750000A77A /* AppDelegate.m */,
+			);
+			name = "Head Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +197,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8FD8BA1E6B27750000A77A /* Contacts.xcdatamodeld in Sources */,
+				CF9AABAB1E6B9DC900E328AC /* ContactClass.m in Sources */,
 				CF8FD8B41E6B27750000A77A /* ViewController.m in Sources */,
+				CF8FD8C81E6B28500000A77A /* ContactDetailsViewController.m in Sources */,
 				CF8FD8B11E6B27750000A77A /* AppDelegate.m in Sources */,
 				CF8FD8AE1E6B27750000A77A /* main.m in Sources */,
 			);
@@ -316,6 +360,7 @@
 				CF8FD8C51E6B27750000A77A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
